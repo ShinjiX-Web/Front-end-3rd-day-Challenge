@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #b4b0b0;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+main{
+    padding:5%;
+    display:grid;
+    place-items: center;
+}
+
+.container {
+    box-sizing: border-box;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );;
+    padding: 40px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.about-section{
+    text-align:center;
+    color:hsl(303, 10%, 53%);
+    margin-bottom: 20%;
+}
+.rating-section{
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap:10px;
+    position: relative;
+    top: 45px;
+    height: -webkit-fill-available;
+}
+.each-rating{
+    background:hsl(333, 40%, 82%);
+    text-align:center;
+    padding:2%;
+    border-radius:5px;
+
+}
+
+.first-section {
+    margin: 150px;
+    margin-bottom: 50px !important;
+    margin-top: 90px;
+    height: 35%;
+}
+.second-section , .first-section p{
+    font-size: 15px;
+}
+.second-section{
+    grid-template-columns: 1fr;
+    width: 90%; 
+    margin-left: 125px; 
+    margin-top: 90px; 
+}
+
+.rate-icon {
+    position: absolute;
+}
+
+.profile{
+    display:flex;
+    gap:4%;
+    color:hsl(300, 24%, 96%);
+}
+
+h1 {
+    margin: auto;
+    font-size: 6rem !important;
+}
+h1 , .rate-writeup{
+    color:hsl(300, 43%, 22%);
+    padding: 4px;
+}
+.testimonials{
+    padding:5%;
+    background:hsl(300, 43%, 22%);
+    border-radius:10px;
+}
+span{
+    display:block;
+    color:hsl(333, 80%, 67%);
+
+}
+.testifier{
+    border-radius:50%;
+}
+.second-section p{
+    text-align: left;
+    color:hsl(303, 10%, 53%);
+}
+
+@media screen and (min-width:800px){
+    .first-section{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4%;
+        align-items: center;
+    }
+    .rating-section{
+        display:block;
+    }
+    .each-rating{
+        margin-bottom:4%;
+        width:70%;
+    }
+    #second{
+        position: relative;
+        left:10%;
+    }
+    #third{
+        position:relative;
+        left:20%;
+    }
+    .second-section{
+        display:block;
+        padding:auto;
+    }
+    .testimonials{
+        width:30%;
+        display:inline-block;
+        margin-left:2%;
+    }
+    #second-box{
+        position:relative;
+        top:35px;
+    }
+    #third-box{
+        position:relative;
+        top:70px;
+    }
+     .first-section p{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    main{
+        padding:5%;
+    }
+    .about-section{
+        text-align:left;
+    }
+}
